@@ -57,3 +57,17 @@ Créer une solution :
 ```bash
 dotnet new sln -n SolutionAnthony
 ```
+
+Ajouter plusieurs projets:
+
+```bash
+dotnet new classlib -n MaBibliotheque
+dotnet sln MaSolution.sln add MaBibliotheque/MaBibliotheque.csproj
+```
+
+Puis créer une référence entre projets :
+
+```bash
+dotnet add MonProjet/MonProjet.csproj reference MaBibliotheque/MaBibliotheque.csproj
+```
+
