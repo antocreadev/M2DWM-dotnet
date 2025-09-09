@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "DataContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/DataContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataContracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DataContracts/1.0.0": {
+      "type": "project",
+      "path": "../DataContracts/DataContracts.csproj",
+      "msbuildProject": "../DataContracts/DataContracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "DataContracts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/antocreadev/.nuget/packages/": {}
@@ -26,12 +45,17 @@
         "net9.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

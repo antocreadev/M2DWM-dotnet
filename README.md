@@ -52,10 +52,24 @@ public static class IntExtensions
 
 ### CLI
 
+#### Solutions
+
 Créer une solution :
 
 ```bash
 dotnet new sln -n SolutionAnthony
+```
+
+Lister les projets dans la solution :
+
+```bash
+dotnet sln list
+```
+
+Retirer le projet de la solution :
+
+```bash
+dotnet sln remove MonProjet/MonProjet.csproj
 ```
 
 Ajouter plusieurs projets:
@@ -65,9 +79,82 @@ dotnet new classlib -n MaBibliotheque
 dotnet sln MaSolution.sln add MaBibliotheque/MaBibliotheque.csproj
 ```
 
-Puis créer une référence entre projets :
+Puis créer une référence entre projets : (cela d'utiliser les classes entre les projets, il faudra aussi ajouter le using)
 
 ```bash
 dotnet add MonProjet/MonProjet.csproj reference MaBibliotheque/MaBibliotheque.csproj
 ```
 
+Pour lancer le projet :
+
+```bash
+dotnet run --project MonProjet
+```
+
+Installer un workload (un workload est comme un SDK mais pour des types d'applications spécifiques, par exemple MAUI pour les applications mobiles et desktop) :
+
+```bash
+dotnet workload install maui
+```
+
+Verifier les workloads installés :
+
+```bash
+dotnet workload list
+```
+
+Créer un projet MAUI :
+
+```bash
+dotnet new maui -n MonProjetMaui
+```
+
+#### Restore
+
+Restaurer les dépendances :
+
+```bash
+dotnet restore MonProjet/MonProjet.csproj
+```
+
+ça permet de télécharger les packages NuGet nécessaires au projet.
+
+#### Lancer un projet
+
+Lancer en dev :
+
+```bash
+dotnet run --project IHM/IHM.csproj -f net9.0-maccatalyst
+```
+
+### Build
+
+- Build / Run sur iOS Simulator
+
+```bash
+dotnet build IHM/IHM.csproj -f net9.0-ios /p:Platform=iPhoneSimulator /p:Configuration=Debug
+dotnet run --project IHM/IHM.csproj -f net9.0-ios /p:Platform=iPhoneSimulator
+```
+
+Ouvre l’app dans le simulateur iPhone sur Mac.
+
+- Build pour iOS Device (Release)
+
+```bash
+dotnet publish IHM/IHM.csproj -f net9.0-ios /p:Platform=iPhone /p:Configuration=Release
+```
+
+Génère un .app signé pour device.
+Pour distribution App Store / TestFlight, il faut un compte Apple Developer.
+
+- Build pour macOS (Release)
+
+```bash
+dotnet publish IHM/IHM.csproj -c Release -f net9.0-maccatalyst /p:RuntimeIdentifier=osx-x64
+```
+
+Pour Apple Silicon :
+
+```bash
+dotnet publish IHM/IHM.csproj -c Release -f net9.0-maccatalyst /p:RuntimeIdentifier=osx-arm64
+```
