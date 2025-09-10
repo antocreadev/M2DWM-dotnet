@@ -1,5 +1,12 @@
 # Dotnet - Fred. Colin
 
+## Architecture
+
+DataContracts : c'est le modèle de données, les classes qui représentent les données.
+ServicesContracts : c'est la couche de contrats de services, les interfaces des services.
+Services : c'est la couche de services, les classes qui gèrent la logique métier, les accès aux données, etc.
+IHM : c'est l'interface utilisateur, les vues, les contrôleurs, les viewmodels.
+
 ### Dotnet
 
 1. Net Core : Cross platform, open source
@@ -124,7 +131,9 @@ dotnet restore MonProjet/MonProjet.csproj
 Lancer en dev :
 
 ```bash
-dotnet run --project IHM/IHM.csproj -f net9.0-maccatalyst
+  dotnet run --project IHM/IHM.csproj -f net9.0-maccatalyst
+
+  dotnet run --project IHM/IHM.csproj  -f net9.0-ios /p:Platform=iPhoneSimulator
 ```
 
 ### Build

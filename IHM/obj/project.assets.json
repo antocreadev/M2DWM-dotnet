@@ -2308,6 +2308,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -4638,6 +4639,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -6968,6 +6970,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -9298,6 +9301,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -11628,6 +11632,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -12066,6 +12071,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -12504,6 +12510,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -12942,6 +12949,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -13380,6 +13388,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -13818,6 +13827,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -14256,6 +14266,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -14694,6 +14705,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -15132,6 +15144,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -15570,6 +15583,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -16008,6 +16022,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "DataContracts": "1.0.0",
           "ServicesContracts": "1.0.0"
         },
         "compile": {
@@ -19026,22 +19041,28 @@
   },
   "projectFileDependencyGroups": {
     "net9.0-android35.0": [
+      "DataContracts >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.5",
       "Microsoft.Maui.Controls >= 9.0.82",
       "Microsoft.NET.ILLink.Tasks >= 9.0.8",
-      "Services >= 1.0.0"
+      "Services >= 1.0.0",
+      "ServicesContracts >= 1.0.0"
     ],
     "net9.0-ios18.5": [
+      "DataContracts >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.5",
       "Microsoft.Maui.Controls >= 9.0.82",
       "Microsoft.NET.ILLink.Tasks >= 9.0.8",
-      "Services >= 1.0.0"
+      "Services >= 1.0.0",
+      "ServicesContracts >= 1.0.0"
     ],
     "net9.0-maccatalyst18.5": [
+      "DataContracts >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.5",
       "Microsoft.Maui.Controls >= 9.0.82",
       "Microsoft.NET.ILLink.Tasks >= 9.0.8",
-      "Services >= 1.0.0"
+      "Services >= 1.0.0",
+      "ServicesContracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -19073,24 +19094,42 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "projectReferences": {
+            "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+            },
             "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj": {
               "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj"
+            },
+            "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
             }
           }
         },
         "net9.0-ios18.5": {
           "targetAlias": "net9.0-ios",
           "projectReferences": {
+            "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+            },
             "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj": {
               "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj"
+            },
+            "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
             }
           }
         },
         "net9.0-maccatalyst18.5": {
           "targetAlias": "net9.0-maccatalyst",
           "projectReferences": {
+            "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+            },
             "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj": {
               "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj"
+            },
+            "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
             }
           }
         }

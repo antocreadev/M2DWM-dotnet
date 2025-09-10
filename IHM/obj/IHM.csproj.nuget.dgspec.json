@@ -90,24 +90,42 @@
           "net9.0-android35.0": {
             "targetAlias": "net9.0-android",
             "projectReferences": {
+              "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+                "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+              },
               "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj": {
                 "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj"
+              },
+              "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
+                "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
               }
             }
           },
           "net9.0-ios18.5": {
             "targetAlias": "net9.0-ios",
             "projectReferences": {
+              "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+                "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+              },
               "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj": {
                 "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj"
+              },
+              "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
+                "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
               }
             }
           },
           "net9.0-maccatalyst18.5": {
             "targetAlias": "net9.0-maccatalyst",
             "projectReferences": {
+              "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+                "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+              },
               "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj": {
                 "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/Services/Services.csproj"
+              },
+              "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
+                "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
               }
             }
           }
@@ -282,6 +300,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+                "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+              },
               "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
                 "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
               }

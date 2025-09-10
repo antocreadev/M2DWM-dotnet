@@ -41,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "DataContracts >= 1.0.0",
       "ServicesContracts >= 1.0.0"
     ]
   },
@@ -70,6 +71,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj": {
+              "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/DataContracts/DataContracts.csproj"
+            },
             "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj": {
               "projectPath": "/Users/antocreadev/Developer/M2DWM-dotnet/ServicesContracts/ServicesContracts.csproj"
             }
