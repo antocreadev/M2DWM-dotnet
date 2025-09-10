@@ -16,11 +16,9 @@ namespace M2Corte2025.FormationFred.Services
             var className = "ClassName".GetConfigValueFor();
             var assemblyFileName = "AssemblyFileName".GetConfigValueFor();
 
-            Debug.WriteLine($"{assemblyFileName} {className}");
-
-            Instance = new ObjectRecipesServices();
+            Instance = Activator.CreateInstance(assemblyFileName, className).Unwrap() as AbstractRecipesServices;
         }
 
-        public static AbstractRecipesServices Instance { get; private set; }
+        public static AbstractRecipesServices? Instance { get; private set; }
     }
 }
