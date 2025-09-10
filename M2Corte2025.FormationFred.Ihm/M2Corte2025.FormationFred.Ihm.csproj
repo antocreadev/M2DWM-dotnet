@@ -12,4 +12,10 @@
     <ProjectReference Include="..\M2Corte2025.FormationFred.Services\M2Corte2025.FormationFred.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
