@@ -13,8 +13,9 @@ namespace Services
         public ObjectRecipesService()
         {
             // Initialize with some sample recipes
-            _recipes.Add(new Recipe("Pasta Carbonara", new List<string> { "Pasta", "Eggs", "Bacon", "Cheese" }, "Cook pasta, mix with eggs and bacon.", 10, 15));
-            _recipes.Add(new Recipe("Chicken Stir Fry", new List<string> { "Chicken", "Vegetables", "Soy Sauce" }, "Stir fry chicken and veggies.", 15, 10));
+        _recipes.Add(new Recipe("Pâtes Carbonara", new List<string> { "Pâtes", "Œufs", "Lardons", "Fromage" }, "Cuire les pâtes, mélanger avec les œufs et les lardons.", 10, 15));
+        _recipes.Add(new Recipe("Sauté de Poulet", new List<string> { "Poulet", "Légumes", "Sauce Soja" }, "Faire sauter le poulet et les légumes.", 15, 10));
+
         }
 
         public Task<List<Recipe>> GetRecipesAsync()
