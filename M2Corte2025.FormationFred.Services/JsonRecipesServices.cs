@@ -17,5 +17,10 @@ namespace M2Corte2025.FormationFred.Services
 
             return JsonConvert.DeserializeObject<List<Recipe>>(json);
         }
+
+        public override List<Recipe> GetByTitle(string title)
+        {
+            return GetAll().Where(@recipe => @recipe.Title.Contains(title)).ToList();
+        }
     }
 }

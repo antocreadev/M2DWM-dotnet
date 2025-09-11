@@ -17,5 +17,10 @@ namespace M2Corte2025.FormationFred.Services
 
             return xdoc.Descendants("recipe").Select(@recipe => new Recipe() { Id = Guid.Parse(@recipe.Attribute("id").Value), Title = recipe.Attribute("title").Value }).ToList();
         }
+
+        public override List<Recipe> GetByTitle(string title)
+        {
+            return GetAll().Where(@recipe => @recipe.Title.Contains(title)).ToList();
+        }
     }
 }

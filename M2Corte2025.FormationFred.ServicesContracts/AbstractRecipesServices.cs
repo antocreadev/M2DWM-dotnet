@@ -11,7 +11,7 @@ namespace M2Corte2025.FormationFred.ServicesContracts
     {
         public abstract List<Recipe> GetAll();
 
-        
+        public abstract List<Recipe> GetByTitle(String title);
 
     }
 }

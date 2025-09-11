@@ -23,5 +23,10 @@ namespace M2Corte2025.FormationFred.Services
 
             return recipes;
         }
+
+        public override List<Recipe> GetByTitle(string title)
+        {
+            return GetAll().Where(@recipe => @recipe.Title.Contains(title)).ToList();
+        }
     }
 }

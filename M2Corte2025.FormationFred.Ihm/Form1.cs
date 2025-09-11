@@ -17,7 +17,14 @@ namespace M2Corte2025.FormationFred.Ihm
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Factory.Instance?.GetAll();
+            if (String.IsNullOrEmpty(textBox1.Text))
+            {
+                dataGridView1.DataSource = Factory.Instance?.GetAll();
+            }
+            else
+            {
+                dataGridView1.DataSource = Factory.Instance?.GetByTitle(textBox1.Text);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
