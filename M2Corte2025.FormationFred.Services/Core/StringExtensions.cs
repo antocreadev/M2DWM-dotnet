@@ -9,11 +9,11 @@ namespace M2Corte2025.FormationFred.Services.Core
 {
     public static class StringExtensions
     {
-        public static String? GetConfigValueFor(this string key)
+        public static String? GetConfigValueFor(this string key, String sectionName= "ApplicationSettings")
         {
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional:false, reloadOnChange: true).Build();
 
-            return builder.GetSection("ApplicationSettings")[key]?.ToString();
+            return builder.GetSection(sectionName)[key]?.ToString();
         }
     }
 }

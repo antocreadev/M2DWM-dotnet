@@ -1,3 +1,5 @@
+using M2Corte2025.FormationFred.Services.Core;
+
 namespace M2Corte2025.FormationFred.Ihm
 {
     internal static class Program
