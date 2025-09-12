@@ -15,7 +15,7 @@ namespace M2Corte2025.FormationFred.ServicesContracts
 
         public abstract List<Recipe> GetByTitle(String title);
 
-        protected List<Recipe> getInternalRecipes(String recipesConnectionString, String commandText, CommandType commandType)
+        protected List<Recipe> getInternalRecipes(String recipesConnectionString, String commandText, CommandType commandType, String? pTitle = null)
         {
             var recipes = new List<Recipe>();
 
@@ -27,6 +27,11 @@ namespace M2Corte2025.FormationFred.ServicesContracts
 
                 cmd.CommandText = commandText;
                 cmd.CommandType = commandType;
+                if (!String.IsNullOrEmpty(pTitle))
+                {
+                    cmd.Parameters.AddWithValue("@title", pTitle);
+
+                }
 
                 var reader = cmd.ExecuteReader();
 
