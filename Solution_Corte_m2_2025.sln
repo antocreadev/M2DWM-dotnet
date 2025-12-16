@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Corte2025.FormationFred.DataContracts", "M2Corte2025.FormationFred.DataContracts\M2Corte2025.FormationFred.DataContracts.csproj", "{C491BB4B-58B1-46A8-92A5-C710BDE21E1B}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Corte2025.FormationFred.Services", "M2Corte2025.FormationFred.Services\M2Corte2025.FormationFred.Services.csproj", "{BCFDE755-07ED-4276-A770-9FE4F8053714}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Corte2025.FormationFred.Ihm", "M2Corte2025.FormationFred.Ihm\M2Corte2025.FormationFred.Ihm.csproj", "{A22F16D0-81AE-4560-B98B-F5D9ED9B7BF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHost", "WebHost\WebHost.csproj", "{B765A0C1-9E2F-4306-BFCA-54D050B86AE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A22F16D0-81AE-4560-B98B-F5D9ED9B7BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22F16D0-81AE-4560-B98B-F5D9ED9B7BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22F16D0-81AE-4560-B98B-F5D9ED9B7BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B765A0C1-9E2F-4306-BFCA-54D050B86AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B765A0C1-9E2F-4306-BFCA-54D050B86AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B765A0C1-9E2F-4306-BFCA-54D050B86AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B765A0C1-9E2F-4306-BFCA-54D050B86AE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

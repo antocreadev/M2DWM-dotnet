@@ -9,11 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="4.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\M2Corte2025.FormationFred.Services\M2Corte2025.FormationFred.Services.csproj" />
+    <ProjectReference Include="..\M2Corte2025.FormationFred.DataContracts\M2Corte2025.FormationFred.DataContracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
