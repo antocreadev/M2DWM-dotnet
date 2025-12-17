@@ -17,8 +17,6 @@ namespace M2Corte2025.FormationFred.Services
             var assemblyFileName = "AssemblyFileName".GetConfigValueFor();
 
             Instance = Activator.CreateInstance(assemblyFileName, className).Unwrap() as AbstractRecipesServices;
-
-            // Guillaume Pley : legends platist
         }
 
         public static AbstractRecipesServices? Instance { get; private set; }

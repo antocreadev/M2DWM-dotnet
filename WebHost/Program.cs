@@ -1,3 +1,5 @@
+using M2Corte2025.FormationFred.Services.DataAccessLayer;
+using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+var connectionString = builder.Configuration.GetConnectionString("RecipesConnectionString");
+
+builder.Services.AddDbContext<BRecipesContext>(
+    @options => @options.UseSqlServer(connectionString)
+    );
 
 var app = builder.Build();
 

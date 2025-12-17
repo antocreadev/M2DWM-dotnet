@@ -11,20 +11,23 @@ namespace M2Corte2025.FormationFred.Services
 {
     public class Db05RecipesServices : AbstractRecipesServices
     {
+        public Db05RecipesServices() 
+        { 
+        }
+
+        public Db05RecipesServices(BRecipesContext ctx)
+        {
+            Context = ctx;
+        }
+
         public override List<Recipe> GetAll()
         {
-            using (var context = new BRecipesContext())
-            {
-                return context.TRecipes.Select(@recipe => new Recipe() { Id = @recipe.Id, Title = @recipe.Title }).ToList();
-            }
+            return ((BRecipesContext)Context!).TRecipes.Select(@recipe => new Recipe() { Id = @recipe.Id, Title = @recipe.Title }).ToList();
         }
 
         public override List<Recipe> GetByTitle(string title)
         {
-            using (var context = new BRecipesContext())
-            {
-                return context.TRecipes.Where(@recipe => @recipe.Title.Contains(title)).Select(@recipe => new Recipe() { Id = @recipe.Id, Title = @recipe.Title }).ToList();
-            }
+            return ((BRecipesContext)Context!).TRecipes.Where(@recipe => @recipe.Title.Contains(title)).Select(@recipe => new Recipe() { Id = @recipe.Id, Title = @recipe.Title }).ToList();
         }
     }
 }
